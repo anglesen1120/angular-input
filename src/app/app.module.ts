@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { InputShareComponent } from './input-share/input-share.component';
+import { InputShareModules } from './component/input-share/input-share.module';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, InputShareComponent ],
+  imports:      [ BrowserModule, FormsModule, InputShareModules ],
+  declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
